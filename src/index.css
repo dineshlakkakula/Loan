@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: #FF851B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.loan {
+  color: #111111;
+}
+
+.month {
+  color: #111111;
+}
+
+.total {
+  font-size: 25px;
+  letter-spacing: -1px;
+  color: #001f3f;
+  text-transform: uppercase;
+  margin: 10px 0 24px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.heading {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.app {
+  padding-left: 20%;
+  padding-right: 10%;
+}
+
+.calculator {
+  border: 5px solid black;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 0%);
+  padding: 3em;
+  margin: 1em;
+  width: 70%;
+  background-color: #fafbff;
+}
+
+.values {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.Sliders {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.first {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.first:focus {
+  outline: none;
+}
+
+.first::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #00BFFF;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+
+.first::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #000000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+.first:focus::-webkit-slider-runnable-track {
+  background: #00BFFF;
+}
+
+.first::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #00BFFF;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+
+.first::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #000000;
+  cursor: pointer;
+}
+
+.first::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+
+.first::-ms-fill-lower {
+  background: #00BFFF;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+.first::-ms-fill-upper {
+  background: #00BFFF;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+.first::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #000000;
+  cursor: pointer;
+}
+
+.first:focus::-ms-fill-lower {
+  background: #00BFFF;
+}
+
+.first:focus::-ms-fill-upper {
+  background: #00BFFF;
+}
+
+
+
+
+
+
+
+
+
+.second {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.second:focus {
+  outline: none;
+}
+
+.second::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #FF0000;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+
+.second::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #000000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+.second:focus::-webkit-slider-runnable-track {
+  background: #FF0000;
+}
+
+.second::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #FF0000;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+
+.second::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #000000;
+  cursor: pointer;
+}
+
+.second::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+
+.second::-ms-fill-lower {
+  background: #FF0000;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+.second::-ms-fill-upper {
+  background: #FF0000;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+.second::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #000000;
+  cursor: pointer;
+}
+
+.second:focus::-ms-fill-lower {
+  background: #FF0000;
+}
+
+.second:focus::-ms-fill-upper {
+  background: #FF0000;
+}
+
+
+
+
