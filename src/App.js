@@ -17,9 +17,7 @@ class App extends PureComponent {
     
   }
 
-  shouldComponentUpdate(nextState) {
-    return this.state !== nextState;
-  }
+
   async componentDidUpdate() {
     let getData = await API.getData(this.state.money, this.state.months);
     console.log(localStorage.length) 
