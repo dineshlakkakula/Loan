@@ -4,13 +4,14 @@ import API from './Services/API'
 class App extends PureComponent {
   constructor(props) {
     super(props)
-
     this.state = {
-      money: localStorage.getItem("money"),
-      months: localStorage.getItem("months"),
-      intrest: localStorage.getItem("intrestrate"),
-      monthlypayment: localStorage.getItem("monthlypayment"),
+      money: localStorage.length>0 ? localStorage.getItem("money") : 500,
+      months: localStorage.length>0 ? localStorage.getItem("months") : 6,
+      intrest: localStorage.length>0 ? localStorage.getItem("intrestrate") : 0.25,
+      monthlypayment: localStorage.length>0 ? localStorage.getItem("monthlypayment") :93,
     }
+
+
     this.changeMoney = this.changeMoney.bind(this);
     this.changeTime = this.changeTime.bind(this);
     
@@ -21,7 +22,7 @@ class App extends PureComponent {
   }
   async componentDidUpdate() {
     let getData = await API.getData(this.state.money, this.state.months);
-    console.log(getData)
+    console.log(localStorage.length) 
     this.setState({
       intrest: getData.interestRate,
       monthlypayment: getData.monthlyPayment.amount,
@@ -54,6 +55,8 @@ class App extends PureComponent {
   }
 
   render() {
+    console.log(this.state)
+
     return (
       <div>
                 <h1 className="heading">LOAN INTEREST CALCULATOR</h1 >
