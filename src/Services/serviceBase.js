@@ -35,7 +35,7 @@ function getHeaders(url) {
 }
 
 function getUrl(url) {
-     return `https://ftl-frontend-test.herokuapp.com${url}`
+     return `https://api.giphy.com/v1/gifs${url}`
 }
 
 /**
